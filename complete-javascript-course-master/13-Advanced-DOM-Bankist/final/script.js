@@ -294,7 +294,7 @@ slider();
 ///////////////////////////////////////
 ///////////////////////////////////////
 
-/*
+/*    */
 ///////////////////////////////////////
 // Selecting, Creating, and Deleting Elements
 
@@ -303,7 +303,7 @@ console.log(document.documentElement);
 console.log(document.head);
 console.log(document.body);
 
-const header = document.querySelector('.header');
+const header1 = document.querySelector('.header');
 const allSections = document.querySelectorAll('.section');
 console.log(allSections);
 
@@ -335,10 +335,10 @@ document
     message.parentElement.removeChild(message);
   });
 
-  
+
 ///////////////////////////////////////
 // Styles, Attributes and Classes
-  
+
 // Styles
 message.style.backgroundColor = '#37383d';
 message.style.width = '120%';
@@ -506,4 +506,4 @@ window.addEventListener('beforeunload', function (e) {
   console.log(e);
   e.returnValue = '';
 });
-*/
+* /
