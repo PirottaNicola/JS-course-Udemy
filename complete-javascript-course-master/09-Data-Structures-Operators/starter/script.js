@@ -1,6 +1,5 @@
 'use strict';
 
-/*
 
 // Data needed for a later exercise
 const flights =
@@ -758,4 +757,3 @@ function collectData() {
 document.querySelector('button').addEventListener('click', collectData);
 
 
-*/

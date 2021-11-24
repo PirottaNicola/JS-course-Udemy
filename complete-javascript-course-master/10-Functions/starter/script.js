@@ -1,6 +1,5 @@
 'use strict';
 
-/* 
 //default parameters
 const bookings = [];
 
@@ -204,8 +203,6 @@ document
   .addEventListener('click', poll.registerNewAnswer.bind(poll));
 
 
-  
-*/
 //immediately invoked function expressions
 (function () {
   console.log('this could never run again');

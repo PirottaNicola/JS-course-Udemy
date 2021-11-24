@@ -1,4 +1,4 @@
-/* 'use strict';
+'use strict';
 
 let hasDriverLicense = false
 const passTest = true
@@ -162,7 +162,7 @@ const jonasObject = { //object literal syntax
     },
     hasDriverLicense: true,
     calcAge: function name(params) { //we need an expression
-        return 2037 - age
+        return 2037 - this.age
     }
 }
 console.log(jonasObject)
@@ -294,7 +294,3 @@ while (dice != 6) {
     dice = Math.trunc(Math.random() * 6) + 1
     if (dice === 6) console.log('loop is about to end...')
 }
-
-
-*/
-

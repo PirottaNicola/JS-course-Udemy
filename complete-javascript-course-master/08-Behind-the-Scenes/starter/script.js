@@ -1,5 +1,5 @@
 'use strict';
-/* 
+
 function calcAge(birthYear) {
 
     const age = 2037 - birthYear
@@ -113,38 +113,38 @@ const jonas = {
         }
         isMillenial() */
 
-/*  //one type of solution (before ES6)
- const self = this
- const isMillenial = function () {
-     console.log(self); 
-     console.log(self.year >= 1981 && self.year <= 1996)
- }
- isMillenial()
- 
- //second solution (arrow function)        
-const isMillenial = () => {
-    console.log(this); //this point to the owner of the calcAge method, jonas
-    console.log(this.year >= 1981 && this.year <= 1996)
-}
-isMillenial()
-},
-greet: () => {
-console.log(this)
-console.log(`hey ${this.firstName}`)
-} //this == undefined, its the this of the global object, cause arrow functions dont have the this keyword
+        //one type of solution (before ES6)
+        const self = this
+        const isMillenial = function () {
+            console.log(self);
+            console.log(self.year >= 1981 && self.year <= 1996)
+        }
+        isMillenial()
+
+        //second solution (arrow function)        
+        const isMillenial = () => {
+            console.log(this); //this point to the owner of the calcAge method, jonas
+            console.log(this.year >= 1981 && this.year <= 1996)
+        }
+        isMillenial()
+    },
+    greet: () => {
+        console.log(this)
+        console.log(`hey ${this.firstName}`)
+    } //this == undefined, its the this of the global object, cause arrow functions dont have the this keyword
 
 }
 jonas.greet()
 jonas.calcAge()
- 
+
 
 
 
 
 //argument keyword (only in regular functions)
 const addExpr = function (a, b) {
-console.log(arguments)
-return a + b
+    console.log(arguments)
+    return a + b
 }
 addExpr(2, 5)
 var addArrow = (a, b) => { a + b }
@@ -167,7 +167,7 @@ friend.age = 27 //also changes the original!!! thats because EVERYTHING THAT IS 
 console.log('friend: ', friend);
 console.log('Me: ', me);
 
-*/
+* /
 
 
 

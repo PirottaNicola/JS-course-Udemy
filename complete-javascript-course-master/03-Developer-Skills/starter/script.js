@@ -1,6 +1,6 @@
 // Remember, we're gonna use strict mode in all scripts now!
 'use strict'
-/*
+
 const temperatures1 = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5]
 const temperature2 = [34, 4, -45, 5, 6, 67, 'error']
 const temperatures = temperatures1.concat(temperature2)
@@ -15,7 +15,7 @@ for (let i = 0; i < temperatures.length; i++) {
     if (currentTemp < minT) minT = currentTemp
 }
 console.log(minT + ' ' + maxT);
-console.log(`the difference between the highest and lowest temperature is: ${maxT - minT}`); 
+console.log(`the difference between the highest and lowest temperature is: ${maxT - minT}`);
 
 const measureKelvin = function () {
     const measurement = {
@@ -31,7 +31,6 @@ const measureKelvin = function () {
 
 console.log(measureKelvin(100));
 
-*/
 
 const t1 = [17, 21, 23]
 const t2 = [12, 5, -5, 0, 4]

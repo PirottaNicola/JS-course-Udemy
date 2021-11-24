@@ -1,4 +1,4 @@
-/* let js = "amazing";
+let js = "amazing";
 // console.log(40 + 30 + 20);
 
 console.log('jonas');
@@ -236,4 +236,3 @@ let bill = 300
 let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20
 console.log(`the bill is ${bill}, so the tip was the ${bill >= 50 && bill <= 300 ? '15%' : '20%'}, equivalent to ${tip} dollars. The final cost of the lunch was ${bill + tip}`)
 
-*/
