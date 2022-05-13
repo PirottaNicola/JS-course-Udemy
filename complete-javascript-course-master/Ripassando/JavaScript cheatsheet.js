@@ -1,4 +1,4 @@
-'use strict'
+/* 'use strict'
 
 console.log('//////////////////////////////////////');
 //Objects
@@ -426,3 +426,38 @@ wait(2)
         console.log('3 second passed');
         return wait(1)
     })
+
+
+consents = {}
+userConsents = [
+  { id: 1234, accepted: true },
+  { id: 1235, accepted: false },
+  { id: 1236, accepted: true },
+]
+userConsents.forEach((u) => (consents[u.id] = u.accepted))
+console.log(consents)
+ */
+
+
+
+//*DOM TRICKS
+//detect if user clicks outside of an element
+const element = document.querySelector('.someElementsClass')
+document.addEventListener('click', (e) => {
+    const outside = !element.contains(e.target)
+})
+
+//event triggered only once for a given element
+const element = document.querySelector('.someElementsClass')
+element.addEventListener('click', () => {
+    console.log('hello')
+}, { once: true })
+
+//scroll to an element
+const button = document.querySelector('button')
+const element = document.querySelector('p')
+button.addEventListener('click', () => {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    //behavior: auto / smooth
+    //block (final scroll position): start, center, end, nearest
+})
