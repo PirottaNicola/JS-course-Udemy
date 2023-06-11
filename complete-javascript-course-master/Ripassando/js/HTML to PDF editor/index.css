@@ -1,0 +1,131 @@
+:root {
+    --dark-background: rgb(40, 44, 52);
+    --dark-h1: rgb(248, 225, 97);
+    --dark-h2: rgb(87, 223, 177);
+    --dark-h3: rgb(253, 162, 226);
+    --dark-text: rgb(105, 113, 131);
+    --light-background: rgb(167, 166, 158);
+    --light-h1: black;
+    --light-h2: rgb(77, 6, 6);
+    --light-h3: rgb(121, 111, 28);
+    --light-text: rgb(31, 31, 31);
+
+}
+
+html {
+    background-color: var(--dark-background);
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html.light {
+    background-color: var(--light-background);
+}
+
+body {
+    display: flex;
+    width: 100%;
+    font-family: 'Sora', sans-serif;
+    margin: 0 0 30vh 0;
+    padding: 0;
+}
+
+body,
+.monospace {
+    font-family: 'PT Mono', monospace;
+    font-family: 'Source Code Pro', monospace;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+#printButton {
+    position: fixed;
+    right: 1em;
+    top: 1em;
+    z-index: 10;
+}
+
+#colorButton {
+    position: fixed;
+    right: 1em;
+    top: 5em;
+    z-index: 10;
+}
+
+#filesButton {
+    position: fixed;
+    right: 1em;
+    top: 9em;
+    z-index: 10;
+}
+
+button img,
+a img {
+    width: 2em;
+}
+
+#pagesContainer {
+    margin: 0 auto 0 auto;
+    width: clamp(50rem, 50%, 100%);
+}
+
+#page {
+    margin: 0;
+    padding: 1em;
+    color: var(--dark-text);
+    background-color: var(--dark-background);
+    font-size: large;
+    font-weight: 500;
+}
+
+#page.light {
+    color: var(--light-text);
+    background-color: var(--light-background);
+}
+
+h1 {
+    font-weight: 800;
+    font-size: xx-large;
+    text-align: center;
+    color: var(--dark-h1);
+    text-transform: capitalize;
+}
+
+h1.light {
+    color: var(--light-h1);
+}
+
+h2 {
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    color: var(--dark-h2);
+    text-transform: capitalize;
+}
+
+h2.light {
+    color: var(--light-h2);
+}
+
+h3 {
+    font-weight: 500;
+    font-size: larger;
+    text-align: left;
+    margin: 2em 0 1em 0;
+    color: var(--dark-h3);
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+h3.light {
+    color: var(--light-h3);
+}
+
+
+ul {
+    margin: 0.4em 0 0 0.4em;
+}

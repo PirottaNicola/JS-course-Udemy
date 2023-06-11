@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML to PDF</title>
+    <!-- LIBRARIES -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./libraries/css-to-pdf-master/js/xepOnline.jqPlugin.js"></script>
+    <script src="./index.js"></script>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="monospace">
+    <!-- PRINT BUTTON -->
+    <a id="printButton" href="#" onclick="return xepOnline.Formatter.Format(['page'])">
+        <img src="./images/printer.png">
+    </a>
+    <!-- PAGE COLORS BUTTON-->
+    <button id="colorButton" onclick="changeTheme()"><img src="./images/color-palette.png" alt=""></button>
+    <a id="printButton" href="#"
+        onclick="return xepOnline.Formatter.Format(['page'], {render: 'newwin', cssStule:[{pageMargin: 0}]})">
+        <img src="./images/printer.png">
+    </a>
+    <!-- FILES BUTTON -->
+    <button id="filesButton" onclick="clearPage()">
+        <img src="./images/files.png" alt="">
+    </button>
+    <div class="avaiableDocuments">
+        <!-- list of avaiable documents to open -->
+    </div>
+    <!-- ************ PAGES CONTAINER *************-->
+    <div id="pagesContainer">
+        <!-- here i add my pages with id='page'-->
+    </div>
+</body>
+
+</html>

@@ -461,3 +461,12 @@ button.addEventListener('click', () => {
     //behavior: auto / smooth
     //block (final scroll position): start, center, end, nearest
 })
+
+
+
+//* REGULAR EXPRESSIONS 
+//regular expression to exclude the character 'a' from the string
+const regex = /a/gi
+const str = 'The quick brown fox jumps over the lazy dog'
+const str2 = str.replace(regex, '') //returns 'The quick brown fox jumps over the lazy dog'
+console.log(str2)
